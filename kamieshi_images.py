@@ -65,7 +65,7 @@ class HobbyImageDownloader(object):
         url_orig = '%s:orig' % url
         filename = self.media_id_list[self.image_list].split('/')[-1]
         self.image_list = self.image_list+1
-        savepath = IMAGES_DIR + filename
+        savepath = IMAGES_DIR + filename + '.jpg'
         try:
             #https = urllib3.PoolManager()
             #response = https.request('GET', url)

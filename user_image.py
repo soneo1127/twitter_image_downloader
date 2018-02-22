@@ -9,12 +9,11 @@ import sys
 from datetime import datetime as dt
 
 #= 画像の保存先ディレクトリ
-tdatetime = dt.now()
-tstr = tdatetime.strftime('%Y-%m-%d %H:%M:%S')
-os.mkdir(tstr)
-IMAGES_DIR = './' + tstr + '/'
-
 user_name = sys.argv[1]
+
+os.mkdir(user_name)
+
+IMAGES_DIR = './' + user_name + '/'
 
 class HobbyImageDownloader(object):
     def __init__(self):
